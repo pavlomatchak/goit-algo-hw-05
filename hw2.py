@@ -20,7 +20,7 @@ def binary_search(arr, x):
             high = mid - 1
 
         else:
-            return mid
+            return (loops, arr[mid])
 
     return (loops, upper_bound)
 
