@@ -44,11 +44,11 @@ if __name__ == '__main__':
 
     for pattern in (pattern_article_2, pattern_article_1):
         time = benchmark(boyer_moore_search, text_2, pattern)
-        results_article_1.append((boyer_moore_search.__name__, pattern, time))
+        results_article_2.append((boyer_moore_search.__name__, pattern, time))
         time = benchmark(kmp_search, text_2, pattern)
-        results_article_1.append((kmp_search.__name__, pattern, time))
+        results_article_2.append((kmp_search.__name__, pattern, time))
         time = benchmark(rabin_karp_search, text_2, pattern)
-        results_article_1.append((rabin_karp_search.__name__, pattern, time))
+        results_article_2.append((rabin_karp_search.__name__, pattern, time))
 
     print('Стаття 1')
     print_results(results_article_1)
